@@ -9,7 +9,7 @@ from utils.npz_loader import npz_loader, group_sup_img_parts, normalize_img
 import sys
 from PIL import Image
 import cv2
-saved_npz_paths = '/path/to/saved_npz'
+saved_npz_path = '/path/to/saved_npz'
 ckpt_path = '/path/to/ckpt'
 
 def calculate_dice_compo(prediction, groundtruth):
@@ -47,8 +47,8 @@ from sam2.build_fsmedsam2 import build_fsmedsam2_video_predictor
 
 
 data_dict = {}
-for i, group in enumerate(group_sup_img_parts(saved_npz_paths)):
-    exp_data = np.load(os.path.join(saved_npz_paths, group['files'][0]))
+for i, group in enumerate(group_sup_img_parts(saved_npz_path)):
+    exp_data = np.load(os.path.join(saved_npz_path, group['files'][0]))
     case_id = group['case_id']
     if case_id not in data_dict:
         data_dict[case_id] = []
@@ -63,9 +63,9 @@ for i, group in enumerate(group_sup_img_parts(saved_npz_paths)):
     query_names = group['files']
 
     for infer_id in range(infer_nums):
-        cur_image = np.load(os.path.join(saved_npz_paths, group['files'][infer_id]))['query_images']
+        cur_image = np.load(os.path.join(saved_npz_path, group['files'][infer_id]))['query_images']
         cur_image = normalize_img(cur_image)
-        cur_label = np.load(os.path.join(saved_npz_paths,group['files'][infer_id]))['query_labels']
+        cur_label = np.load(os.path.join(saved_npz_path,group['files'][infer_id]))['query_labels']
         query_imgs.append(cur_image)
         query_labels.append(cur_label)
 
