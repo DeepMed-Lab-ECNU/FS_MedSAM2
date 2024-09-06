@@ -1,6 +1,7 @@
 # FS_MedSAM2: Exploring the Potential of SAM2 for Few-Shot Medical Image Segmentation without Fine-tuning
-
+<!--
 [arxiv]()
+-->
 
 ## Getting Strated
 
@@ -23,7 +24,7 @@ python infer_fsmedsam2_by_slice.py # infer 1S1Q
 python infer_fsmedsam2_by_volume.py # infer S1SFQ from start
 python infer_fsmedsam2_by_volume_from_middle.py # infer S1SFQ from middle
 ```
-
+<!--
 ## Citation
 
 If you find these projects useful, please consider citing:
@@ -31,6 +32,7 @@ If you find these projects useful, please consider citing:
 ```bibtex
 
 ```
+-->
 
 ## Questions
 If you have any questions, welcome contact me at 'yhbai@stu.ecnu.edu.cn'
