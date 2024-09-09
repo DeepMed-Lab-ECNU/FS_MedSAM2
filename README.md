@@ -17,7 +17,7 @@ You can obtain the data by following steps, or directly obtain the data by [Baid
 
 1. Based on the official repository of [SAM2](https://github.com/facebookresearch/segment-anything-2), deploy SAM2 locally at `/path/to/SAM2`;
 2. Move the files and folders from this repository, `/sam2` and those under `/notebooks`, to the corresponding folder at `/path/to/SAM2/sam2` and `/path/to/SAM2/notebooks`. e.g, move `/FS_MedSAM2/sam2/build_fsmedsam2.py` under `/path/to/SAM2/sam2/build_fsmedsam2.py`.
-3. After changing the `saved_npz_path = '/path/to/saved_npz'` and `'ckpt_path = /path/to/ckpt'`, eval FS_MedSAM2:
+3. After changing the `saved_npz_path = '/path/to/saved_npz'` and `ckpt_path = '/path/to/ckpt'`, eval FS_MedSAM2:
 ```
 cd /path/to/SAM2/notebooks
 python infer_fsmedsam2_by_slice.py # infer 1S1Q
