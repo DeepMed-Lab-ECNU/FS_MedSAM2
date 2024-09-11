@@ -1,7 +1,11 @@
 # FS_MedSAM2: Exploring the Potential of SAM2 for Few-Shot Medical Image Segmentation without Fine-tuning
-<!--
-[arxiv]()
--->
+
+[arxiv](https://arxiv.org/abs/2409.04298)
+
+## News
+
+We provide `example_data` folder, which contains some example data for anyone who want to try this code.
+
 
 ## Getting Strated
 
@@ -24,15 +28,24 @@ python infer_fsmedsam2_by_slice.py # infer 1S1Q
 python infer_fsmedsam2_by_volume.py # infer S1SFQ from top
 python infer_fsmedsam2_by_volume_from_middle.py # infer S1SFQ from middle
 ```
-<!--
+
 ## Citation
 
 If you find these projects useful, please consider citing:
 
 ```bibtex
+@misc{bai2024fsmedsam2exploringpotentialsam2,
+      title={FS-MedSAM2: Exploring the Potential of SAM2 for Few-Shot Medical Image Segmentation without Fine-tuning}, 
+      author={Yunhao Bai and Qinji Yu and Boxiang Yun and Dakai Jin and Yingda Xia and Yan Wang},
+      year={2024},
+      eprint={2409.04298},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.04298}, 
+}
 
 ```
--->
+
 
 ## Questions
 If you have any questions, welcome contact me at 'yhbai@stu.ecnu.edu.cn'
