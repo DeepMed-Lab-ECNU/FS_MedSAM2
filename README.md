@@ -13,7 +13,7 @@ We provide `example_data` folder, which contains some example data for anyone wh
 
 You can obtain the data by following steps, or directly obtain the data by [Baidu Cloud](https://pan.baidu.com/s/1DPqK3Qps0h5ZU2EzD1kSwg?pwd=t9vu) (password: t9vu).
 
-1. Follow [SSL_ALPNet]([https://github.com/zmcheng9/GMRD](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation/tree/2f2a22b74890cb9ad5e56ac234ea02b9f1c7a535)) to create SSL_ALPNet project at  `/path/to/SSL_ALPNet`;
+1. Follow [SSL_ALPNet](https://github.com/zmcheng9/GMRD](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation/tree/2f2a22b74890cb9ad5e56ac234ea02b9f1c7a535)) to create SSL_ALPNet project at  `/path/to/SSL_ALPNet`;
 2. Process Synapse-CT and CHAOS-MRI datasets follow SSL_ALPNet;
 3. Place `validation_wopred.py` in the `/path/to/SSL_ALPNet` directory, update the `saved_npz_path = '/path/to/saved_npz'`, and run it using either `/path/to/SSL_ALPNet/test_ssl_abdominal_ct.sh` or `/path/to/SSL_ALPNet/test_ssl_abdominal_mri.sh`.
 
